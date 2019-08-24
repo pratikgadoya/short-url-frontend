@@ -1,0 +1,15 @@
+.main-form {
+    height: 55px;
+}
+
+.url-link {
+    padding: 15px;
+    font-size: 16px;
+    color: #fff;
+}
+
+.url-error {
+    padding: 15px;
+    font-size: 16px;
+    color: red;
+}

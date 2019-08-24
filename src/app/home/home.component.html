@@ -1,0 +1,54 @@
+<header>
+    <div class="navbar" role="navigation">
+        <div class="container">
+            <div class="navbar-header">
+                <a class="navbar-brand">
+                    <img src="https://shurl.club/content/auto_site_logo.png" alt="Infinity - Premium URL Shortener Theme">
+                </a>
+            </div>
+        </div>
+    </div>
+</header>
+<section class="under-head-cont main-index-top" style="background-image:url(assets/back.jpg);">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="promo">
+                    <h1>URL Shortener</h1>
+                </div>
+                <div class="p-relative">
+                    <div class="main-form">
+                        <div class="row">
+                            <div class="col-md-9 shortfieldz">
+                                <input type="text" class="form-control main-input" [(ngModel)]="url" placeholder="Paste a long url">
+                            </div>
+                            <div class="col-md-3 shortbtnz">
+                                <button class="btn btn-default btn-block main-button" (click)="shortUrl()" type="button">Shorten</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="main-form">
+                        <div class="row">
+                            <div class="col-md-12 shortfieldz">
+                                <a *ngIf="success" class="url-link" href="{{ shortenUrl }}" target="_BLANK">{{ shortenUrl }}</a>
+                                <span *ngIf="error" class="url-error">{{ errorMsg }}<br /><br /></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- 
+<div style="text-align:center">
+    <h1>
+        Welcome to {{ title }}!
+    </h1>
+    <div>
+        <label>Enter Url :</label>
+        <input type="text" class="form-control" /> <br /><br />
+        <button type="button">Short URL</button> <br /><br />
+    </div>
+</div> -->
